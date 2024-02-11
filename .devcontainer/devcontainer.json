@@ -1,9 +1,8 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
 // README at: https://github.com/devcontainers/templates/tree/main/src/javascript-node-postgres
 {
-	"name": "Backstage",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "app",
+	"name": "Backstage",	
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:dev-20-bullseye",	
 	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	 "features": {
@@ -14,7 +13,8 @@
 		},
 		"ghcr.io/devcontainers/features/python:1": {
 			"version": "3.11"
-		}
+		},
+		"ghcr.io/devcontainers-contrib/features/postgres-asdf:1": {}
 	 },
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// This can be used to network with other containers or with the host.
