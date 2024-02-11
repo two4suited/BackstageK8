@@ -5,6 +5,6 @@ metadata:
   annotations:
     github.com/project-slug: two4suited/BackstageK8
 spec:
-  type: other
-  lifecycle: unknown
+  type: application
+  lifecycle: developement
   owner: developers
